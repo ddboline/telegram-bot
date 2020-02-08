@@ -15,7 +15,6 @@ categories = ["api-bindings", "asynchronous"]
 license = "MIT"
 
 [features]
-openssl = ["hyper-tls"]
 rustls = ["hyper-rustls"]
 default = ["rustls"]
 [dependencies]
@@ -29,7 +28,6 @@ multipart = { version = "0.16", default-features = false, features = ["client"] 
 telegram-bot-raw = { version = "0.7.0", path = "../raw" }
 
 hyper = "0.13"
-hyper-tls = { version = "0.4", optional = true  }
 futures = "0.3"
 hyper-rustls = { version = "0.19", optional = true }
 [dev-dependencies]
