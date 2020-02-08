@@ -17,7 +17,7 @@ license = "MIT"
 [features]
 openssl = ["hyper-tls"]
 rustls = ["hyper-rustls"]
-default = ["openssl"]
+default = ["rustls"]
 [dependencies]
 bytes = "0.5"
 tokio = { version = "0.2", features = ["fs"]}
