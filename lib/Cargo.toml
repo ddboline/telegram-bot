@@ -1,6 +1,6 @@
 [package]
 name = "telegram-bot"
-version = "0.7.2"
+version = "0.7.3"
 authors = ["Lukas Kalbertodt <lukas.kalbertodt@gmail.com>", "Fedor Gogolev <knsd@knsd.net>", "Gustavo Aguiar <gustavo.h.o.aguiar@gmail.com>"]
 edition = "2018"
 
@@ -18,8 +18,8 @@ license = "MIT"
 rustls = ["hyper-rustls"]
 default = ["rustls"]
 [dependencies]
-bytes = "0.5"
-tokio = { version = "0.2", features = ["fs"]}
+bytes = "1.0"
+tokio = { version = "1.0", features = ["fs"]}
 
 tracing = "0.1"
 tracing-futures = "0.2"
@@ -27,9 +27,9 @@ multipart = { version = "0.17", default-features = false, features = ["client"] 
 
 telegram-bot-raw = { version = "0.7.0", path = "../raw" }
 
-hyper = "0.13"
+hyper = "0.14"
 futures = "0.3"
-hyper-rustls = { version = "0.21", optional = true }
+hyper-rustls = { version = "0.22", optional = true }
 [dev-dependencies]
 tracing-subscriber = "0.2"
-tokio = { version = "0.2", features = ["macros", "time", "fs"] }
+tokio = { version = "1.0", features = ["macros", "time", "fs"] }
